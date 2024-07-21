@@ -1,0 +1,11 @@
+ 1  vi docker.sh
+    2  sh docker.sh
+    3  docker volume create nar
+    4  docker volume ls
+    5  docker pull httpd
+    6  docker images
+    7  docker run -it -d --name webapp -v nar:/usr/local/apache2/htdocs/ httpd
+    8  cd /var/lib/docker/volumes/_data
+    9  cd /var/lib/docker/volumes/nar/_data
+   10  ls
+   11  history
