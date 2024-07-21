@@ -7,5 +7,7 @@
     7  docker run -it -d --name webapp -v nar:/usr/local/apache2/htdocs/ httpd
     8  cd /var/lib/docker/volumes/_data
     9  cd /var/lib/docker/volumes/nar/_data
-   10  ls
-   11  history
+   10  docker swarn init
+   11  docker service create --replicas=number of containers required -P '8000:80' --name=service name image name
+   12  docker sewrvice ls
+   13  docker service scale service name
